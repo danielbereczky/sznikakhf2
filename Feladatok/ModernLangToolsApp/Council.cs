@@ -29,12 +29,12 @@ namespace ModernLangToolsApp
             CouncilChanged?.Invoke("Member removed");
         }
 
-        public List<Jedi> findLowValJedis()
+        public List<Jedi> findLowValJedis_Delegate()
         {
             return members.FindAll(isJediLowValue);
         }
 
-        public List<Jedi> findUnderThousandMidiChlorian() {
+        public List<Jedi> findUnderThousandMidiChlorian_Lambda() {
             return members.FindAll(x => x.MidiChlorianCount < 1000);
         }
     }
