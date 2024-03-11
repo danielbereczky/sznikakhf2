@@ -47,13 +47,13 @@ public class Program
 
     [Description("Feladat4")]
     public static List<Jedi> findLowValueJedis_Delegate(Council c) {
-        return c.findLowValJedis();
+        return c.findLowValJedis_Delegate();
     }
 
     [Description("Feladat5")]
     public static List<Jedi> findLowValueJedis_Lambda(Council c)
     {
-        return c.findUnderThousandMidiChlorian();
+        return c.findUnderThousandMidiChlorian_Lambda();
     }
 
     [Description("Feladat6")]
@@ -63,7 +63,7 @@ public class Program
 
         ReportPrinter reportPrinter = new ReportPrinter(
             employees,
-            () => Console.WriteLine("Employees"), () => Console.WriteLine("Footer"),Person => $"{Person.Name} (Age: {Person.Age})");
+            () => Console.WriteLine("Employees"), () => Console.WriteLine("Footer"),Person => $"{Person.Name} (Age: {Person.Age}");
 
         reportPrinter.PrintReport();
     }
