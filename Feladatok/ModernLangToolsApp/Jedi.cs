@@ -9,10 +9,7 @@ namespace ModernLangToolsApp
 {
     [Serializable]
     public class Jedi
-    {
-        
-        string name;
-        
+    {        
         int midiChlorianCount;
         [XmlAttribute("nev")]
         public string Name { get; set; }
